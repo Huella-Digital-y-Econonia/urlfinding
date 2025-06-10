@@ -11,18 +11,19 @@ Having access to a company's official website is key for economic and statistica
 ## Project structure
 
 
-    ├── data
-    │   ├── processed
-    │   ├── external
-    │   └── raw
-    ├── figures
-    ├── notebooks
-    ├── src
-    ├── requirements.txt
-    └── README.md
+  Directory structure:
+  └── huella-digital-y-econonia-urlfinding/
+      ├── README.md
+      ├── requirements.txt
+      ├── docs/
+      ├── figures/
+      └── src/
+          ├── 2_first_searcher.ipynb
+          ├── 3_scraper.ipynb
+          ├── 5_classification.ipynb
+          ├── quickstart.py
+          └── 3_crawler/
 
-
-Currently this repository is WIP.
 
 ## Get started
 
@@ -31,7 +32,8 @@ In short the software operates as follows:
 - Scrapes the websites to enrich the results with additional content.
 - Applies regular expressions to extract relevant identifying information.
 - Uses linkage rules and machine learning models to match the correct URL to each company.
-- This process model is shown in the figure below:
+
+This process model is shown in the figure below:
 
 <p align="center">
   <img src="figures/steps.png" alt="steps" width="400"/>
