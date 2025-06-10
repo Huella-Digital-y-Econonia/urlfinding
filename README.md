@@ -1,1 +1,60 @@
-# urlfinding
+# URL Finding
+
+*Extracting Company Websites Using Web Search and Web Data*
+
+## Introduction
+
+This repository contains the code and resources to build a URL finding system, which aims to automatically identify the official websites of companies based on various input signals (e.g. company name, address, NIF). The approach combines structured company datasets with search engine queries, web scraping, matching logic and machine learning models to retrieve and validate URLs.
+
+Having access to a company's official website is key for economic and statistical research, business intelligence and monitoring firm dynamics. However, many firms are not directly linked to a known URL in business registers or official datasets, which motivates the need for automated URL identification systems.
+
+## Project structure
+
+
+    ├── data
+    │   ├── processed
+    │   ├── external
+    │   └── raw
+    ├── figures
+    ├── notebooks
+    ├── src
+    ├── requirements.txt
+    └── README.md
+
+
+Currently this repository is WIP.
+
+## Get started
+
+In short the software operates as follows:
+    1. Uses a search engine to gather a collection of websites to be candidate as the official. In our case Google API was used.
+    2. Uses web scraping to amplify this information with more information from the website
+    3. Use regular expressions to find the relevant informatin that helps to identify the company
+    4. Uses linkage rules and machine learning models to associate url to company
+
+This process model is shown in the figure below:
+
+[steps](figures/steps.png)
+
+Use the following commands to install urlfinding from your anaconda prompt:
+
+
+```bash
+git clone https://github.com/Huella-Digital-y-Econonia/urlfinding.git # or download and unzip this repository
+cd urlfinding
+pip install -r requirements.txt
+```
+
+### Searcher
+
+This software uses the *[Google custom search JSON API](https://developers.google.com/custom-search)* which offers 100 search queries per day for free. Use the paid version if you need more.
+
+To get started configure a custom search engine and get your API key from [here](https://developers.google.com/custom-search/v1/overview). Then add the API key and the search engine ID to the `config.yml`.
+
+### Scraper
+
+
+### Matching
+
+
+### Linking
