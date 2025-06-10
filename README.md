@@ -27,14 +27,16 @@ Currently this repository is WIP.
 ## Get started
 
 In short the software operates as follows:
-    1. Uses a search engine to gather a collection of websites to be candidate as the official. In our case Google API was used.
-    2. Uses web scraping to amplify this information with more information from the website
-    3. Use regular expressions to find the relevant informatin that helps to identify the company
-    4. Uses linkage rules and machine learning models to associate url to company
+- Uses a search engine (Google API in this case) to collect candidate websites.
+- Scrapes the websites to enrich the results with additional content.
+- Applies regular expressions to extract relevant identifying information.
+- Uses linkage rules and machine learning models to match the correct URL to each company.
+- This process model is shown in the figure below:
 
-This process model is shown in the figure below:
+<p align="center">
+  <img src="figures/steps.png" alt="steps" width="400"/>
+</p>
 
-[steps](figures/steps.png)
 
 Use the following commands to install urlfinding from your anaconda prompt:
 
