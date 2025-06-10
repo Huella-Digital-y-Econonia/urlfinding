@@ -11,18 +11,18 @@ Having access to a company's official website is key for economic and statistica
 ## Project structure
 
 
-  Directory structure:
-  └── huella-digital-y-econonia-urlfinding/
-      ├── README.md
-      ├── requirements.txt
-      ├── docs/
-      ├── figures/
-      └── src/
-          ├── 2_first_searcher.ipynb
-          ├── 3_scraper.ipynb
-          ├── 5_classification.ipynb
-          ├── quickstart.py
-          └── 3_crawler/
+    Directory structure:
+    └── huella-digital-y-econonia-urlfinding/
+        ├── README.md
+        ├── requirements.txt
+        ├── docs/
+        ├── figures/
+        └── src/
+            ├── 2_first_searcher.ipynb
+            ├── 3_scraper.ipynb
+            ├── 5_classification.ipynb
+            ├── quickstart.py
+            └── 3_crawler/
 
 
 ## Get started
